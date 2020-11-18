@@ -1,0 +1,70 @@
+/* RESET */ 
+
+body, header, nav, img, ul, a, main, div, section, h2, p, footer{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+
+} 
+
+* {
+  font-size: 20px;
+}
+
+body {
+  background: rgb(235, 235, 235) url('img.jpg');
+}
+
+/* ESTILIZANDO O FORMULÁRIO */
+form.formulario {
+  width: 500px;
+  background-color: lightgray;
+  margin: 10px auto;
+  border: 1px solid black;
+}
+
+form.formulario p {
+  text-align: center;
+  line-height: 10px;
+  padding: 5px;
+}
+
+form.formulario p label {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+}
+
+/* ESTILIZANDO A TABELA */
+
+table {
+  text-align: center;
+  vertical-align: middle;
+  margin: 10px;
+  background-color: goldenrod;
+}
+
+caption {
+  background-color: goldenrod;
+}
+
+thead {
+  background-color: indianred;
+}
+
+tbody > tr:nth-child(odd){
+  background-color: darkgray;
+}
+
+tbody > tr:nth-child(even){
+  background-color: lightgray;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (min-width: 1200px){
+  body {
+    background-color: goldenrod;
+  }
+}

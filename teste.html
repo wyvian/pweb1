@@ -2,53 +2,75 @@
 <html lang="pt-br">
   <head>
     <title>Testes</title>
-    <style>
-      * {
-        font-size: 20px;
-      }
-      body {
-        background: darkgray url('img.jpg');
-      }
-      tbody > tr:nth-child(odd){
-        background-color: darkcyan;
-      }
-      tbody > tr:nth-child(even){
-        background-color: cyan;
-      }
-      table {
-        background-color: darkgoldenrod ;
-        text-align: center;
-        vertical-align: middle;
-      }
-      caption {
-        background-color: darkgray;
-      }
-    </style>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
 
   <body>
+
   <table>
     <caption>Cidades mais populosas de Alagoas</caption>
-    <thead>
-      <tr>
+    <thead><tr>
         <th scope="col">Cidade</th>
         <th scope="col">Habitantes</th>
-      </tr>
-    </thead>
+    </tr></thead>
+    
     <tbody>
       <tr>
         <td>Maceió</td>
         <td>1.029.129.</td>
       </tr>
+
       <tr>
         <td>Arapiraca</td>
         <td>234.185</td>
       </tr>
+      
       <tr>
         <td>Rio Largo</td>
         <td>76.019</td>
       </tr>
     </tbody>
   </table>
+
+  <form method="GET" action="respostas" class="formulario">
+    <p>
+      <label for="tam">Tamanho da Tela:</label>
+      <select name="tamanho_tela" id="tam">
+        <option value="mini">5,4 polegadas</option>
+        <option value="normal">6,1 polegadas</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="cor">Cor do Aparelho</label>
+      <select name="cor" id="cor">
+        <option value="branco">Branco</option>
+        <option value="preto">Preto</option>
+        <option value="azul">Azul</option>
+        <option value="vermelho">Vermelho</option>
+        <option value="verde">Verde</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="espaco">Capacidade de Armazenamento</label>
+      <select name="armazenamento" id="espaco">
+        <option value="64">64 GB</option>
+        <option value="128">128 GB</option>
+        <option value="256">256 GB</option>
+      </select>
+    </p>
+
+    <p>
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}">
+    </p>
+
+    <p>
+      <input type="submit" value="Enviar">
+    </p>
+  </form>
+
   </body>
 </html>
