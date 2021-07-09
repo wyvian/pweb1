@@ -6,47 +6,56 @@ body, header, nav, img, ul, a, main, div, section, h2, p, footer{
   border: none;
   outline: none;
   box-sizing: border-box;
-
-} 
+}
 
 * {
-  font-size: 20px;
+  font-size: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-  background: rgb(235, 235, 235) url('img.jpg');
+  background: rgb(235, 235, 235);
+}
+
+body > * {
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 /* ESTILIZANDO O FORMULÁRIO */
 form.formulario {
-  width: 500px;
+  width: 80%;
+  height: 80%;
   background-color: lightgray;
-  margin: 10px auto;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid black;
 }
 
 form.formulario p {
   text-align: center;
-  line-height: 10px;
-  padding: 5px;
+  padding: 15px;
 }
 
-form.formulario p label {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 20px;
+form.formulario option, select {
+  font-size: 1em;
 }
 
 /* ESTILIZANDO A TABELA */
 
 table {
+  width: 80%;
+  height: 40%;
   text-align: center;
   vertical-align: middle;
-  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: lightcoral;
 }
 
 caption {
   background-color: lightcoral;
+  line-height: 150%;
 }
 
 thead {
@@ -59,6 +68,11 @@ tbody > tr:nth-child(odd){
 
 tbody > tr:nth-child(even){
   background-color: lightgray;
+}
+
+#cpf {
+  width: 50%;
+  font-size: 80%;
 }
 
 /* RESPONSIVIDADE */
